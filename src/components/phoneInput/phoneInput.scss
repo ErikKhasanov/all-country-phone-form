@@ -1,0 +1,65 @@
+
+.select-wrapper {
+  display: inline-block;
+  position: relative;
+  height: 28px;
+  width: 48px;
+  cursor: pointer;
+  .selected-flag {
+    position: relative;
+    width: 31px;
+    height: 31px;
+
+    .flag {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 31px;
+      height: 31px;
+    }
+
+    .arrow {
+      position: relative;
+      top: 50%;
+      margin-top: -4px;
+      left: 35px;
+      width: 0;
+      height: 0;
+      border-left: 5px solid transparent;
+      border-right: 5px solid transparent;
+      border-top: 6px solid #fff;
+    }
+  }
+}
+
+.phone-code-list{
+  position: absolute;
+  top: 50px;
+  list-style: none;
+  background-color: #fff;
+  width: 100%;
+  max-height: 160px;
+  padding: 10px 15px;
+  overflow: auto;
+  &__item{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    border-bottom: 1px solid #dee1e3;
+    padding: 6px 10px;
+  }
+  &__country{
+    padding-left: 25px;
+    .flag{
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+      display: inline-block;
+      width: 31px;
+      height: 31px;
+    }
+  }
+}
